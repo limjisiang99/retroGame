@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dungeon.Controller" style="-fx-background-image: url(Dungeon/dungeon.jpg);">
+    <center>
+        <GridPane hgap="10.0" prefHeight="258.0" prefWidth="430.0" vgap="10.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints maxWidth="200.0" prefWidth="225.0" />
+                <ColumnConstraints />
+            </columnConstraints>
+            <children>
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="resume" text="Continue Escape" onAction="#launchGameSave" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Resume level where you left off" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <children>
+                        <Button fx:id="playLevel" text="Start Level" onAction="#launchGameNew" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Start this level" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="back" text="Return" onAction="#launchMenu" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Return to Main Menu" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </center>
+
+</BorderPane>

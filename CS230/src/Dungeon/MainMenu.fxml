@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?language javascript?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="103.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dungeon.Controller" style="-fx-background-image: url(Dungeon/dungeon.jpg);">
+
+    <top>
+        <Label text="Main Menu" BorderPane.alignment="CENTER" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+            <font>
+                <Font size="26.0" />
+            </font>
+            <padding>
+                <Insets bottom="1.0" left="10.0" right="10.0" top="1.0" />
+            </padding>
+        </Label>
+    </top>
+
+    <center>
+        <GridPane hgap="10.0" vgap="1.0" BorderPane.alignment="TOP_LEFT">
+            <columnConstraints>
+                <ColumnConstraints maxWidth="200.0" prefWidth="115.0" />
+                <ColumnConstraints />
+            </columnConstraints>
+            <children>
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <children>
+                        <Button fx:id="levelOne" text="LEVEL ONE" onAction="#launchLevelScreen" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Yard of Broken Souls" GridPane.columnIndex="1" GridPane.rowIndex="1" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <children>
+                        <Button fx:id="levelTwo" text="LEVEL TWO" onAction="#launchLevelScreen" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="A Glimpse of Olympus" GridPane.columnIndex="1" GridPane.rowIndex="2" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <children>
+                        <Button fx:id="levelThree" text="LEVEL THREE" onAction="#launchLevelScreen" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Satan's Arsenal" GridPane.columnIndex="1" GridPane.rowIndex="3" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <children>
+                        <Button fx:id="levelFour" text="LEVEL FOUR" onAction="#launchLevelScreen" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="The Fields of Elysium" GridPane.columnIndex="1" GridPane.rowIndex="4" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    <children>
+                        <Button fx:id="delete" text="DELETE PROFILE" onAction="#deleteProfile" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Delete this profile" GridPane.columnIndex="1" GridPane.rowIndex="5" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                    <children>
+                        <Button fx:id="back" text="LOGOUT" onAction="#launchLogin" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Return to Log In" GridPane.columnIndex="1" GridPane.rowIndex="6" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="7">
+                    <children>
+                        <Button fx:id="leaderboard" prefHeight="50.0" prefWidth="165.0" text="LEADERBOARD" onAction="#launchLeaderboard" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="View leaderboard" GridPane.columnIndex="1" GridPane.rowIndex="7" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+                <HBox prefHeight="45.0" prefWidth="151.0" spacing="5" GridPane.columnIndex="0" GridPane.rowIndex="8">
+                    <children>
+                        <Button fx:id="quit" text="QUIT" onAction="#quitGame" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Label text="Exit the Game" GridPane.columnIndex="1" GridPane.rowIndex="8" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+
+            </children>
+            <rowConstraints>
+                <RowConstraints maxHeight="200.0" prefHeight="100.0" />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+
+    </center>
+
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dungeon.Controller" style="-fx-background-image: url(Dungeon/dungeon.jpg);">
+    <top>
+    <Label text="Leaderboard" BorderPane.alignment="CENTER" style="-fx-background-image: url(Dungeon/starStart.jpg);">
+        <font>
+            <Font size="36.0" />
+        </font>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </Label>
+
+</top>
+    <center>
+        <HBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="level1" text="Level One" onAction="#launchLeaderboard1View" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                <Button fx:id="level2" text="Level Two" onAction="#launchLeaderboard2View" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                <Button fx:id="level3" text="Level Three" onAction="#launchLeaderboard3View" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                <Button fx:id="level4" text="Level Four" onAction="#launchLeaderboard4View" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+                <Button fx:id="menu" text="Return" onAction="#launchMenu" maxWidth="205" maxHeight="64" HBox.hgrow="ALWAYS" style="-fx-background-image: url(Dungeon/starStart.jpg);"/>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </center>
+    </BorderPane>
+
